@@ -1,0 +1,1 @@
+This repository tracks changes to my resume. I got tired of using Overleaf for my LaTeX resume and not having the ability to track changes meant a new resume file every few months. So, I guess this solves that.
