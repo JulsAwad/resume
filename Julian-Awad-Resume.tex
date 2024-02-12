@@ -5,7 +5,7 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage{hyperref}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{verbatim}
 
 \hypersetup{
@@ -20,10 +20,14 @@
 \usepackage[left=0.3in,top=0.4in,right=0.3in,bottom=0.4in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{0.3\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{1em}\rlap{#1}}
+
+%\newenvironment{CVmode}{}{}
+\newenvironment{CVmode}{\comment}{\endcomment} % use this to hide
+
 \name{\bf Julian Awad} % Your name
 
 \address{(613)-806-2681 \\ julian.awad@queensu.ca \\ www.linkedin.com/in/julian-awad}
-\address{\bf{Clearances Held (Canada): NATO Secret \\ Controlled Goods Program \\ Enhanced Reliability}}
+%\address{\bf{Clearances Held (Canada): NATO Secret \\ Controlled Goods Program \\ Enhanced Reliability}}
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -51,14 +55,7 @@
 
 \end{rSubsection}
 
-\begin{comment}
-\begin{rSubsection}{Co-Lead Propulsion Engineer}{September 2022 - Present}{Queen's Rocket Engineering Team}{}
-\item Designing the team's first student-built Hybrid Rocket Engine to reach an apogee of 10,000ft and compete at two international events against 150+ other schools.
-\item Writing a Python simulation to numerically model the turbulent boundary layer and fuel regression dynamics, allowing for the prediction and optimization of performance metrics such as thrust, chamber pressure, and specific impulse.
-\item Managing a team of 15+ engineering students to accomplish a hot-fire test through efficiently delegating tasks, providing learning resources, and maintaining deadlines while giving members autonomy and ownership of their work.
-\item Created Standard Operating Procedures (SOP) documentation in LaTeX for the safe operation of a cold-flow and hot-fire test, complete with hazard assessment, risk mitigation, and contingency planning
-\end{rSubsection}
-\end{comment}
+\begin{CVmode}
 
 \begin{rSubsection}{Lockheed Martin}{May 2021 - August 2021}{Hardware Engineering Intern}{}
 
@@ -68,7 +65,6 @@
 
 \end{rSubsection}
 
-\begin{comment}
 \begin{rSubsection}{Department of National Defense - Engineering Intern}{May 2020 - September 2020}{}{}
 
 \item Documented and presented key specifications on armored patrol vehicles for 411 vehicles in 69 variants
@@ -76,6 +72,8 @@
 \item Proofread english-to-french translations of contracts to ensure correctness
 
 \end{rSubsection}
+
+\end{CVmode}
 
 \end{rSection}
 
@@ -89,6 +87,8 @@
 
 \end{rSubsection}
 
+\begin{CVmode}
+
 \begin{rSubsection}{Co-Founder, PolyTwist Designs}{November 2015 - Present}{\url{www.polytwist.xyz}}{}
 \item Co-founded a small business designing and manufacturing original Rubik's-Cube-style puzzles with unique mechanisms, challenges, and solutions using FDM 3D Printing and SolidWorks
 \item Designed and manufactured several novel products end-to-end resulting in 16+ original designs
@@ -97,19 +97,33 @@
 
 \end{rSubsection}
 
+\end{CVmode}
 
 \end{rSection}
-\end{comment}
+
 %----------------------------------------------------------------------------------------
 %	TECHNICAL SKILLS SECTION
 %----------------------------------------------------------------------------------------
+\begin{CVmode}
+
+\begin{rSection}{Relevant Coursework}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Experimental Physics & DAQ with LabVIEW, Electronics, Experimental Design, Vaccuum Systems \\
+Data Analysis & Python/Jupyter, Numerical Methods, Scientific Computing, MATLAB \\
+Mechanical Engineering & SolidWorks, Solid Edge, DFM \& DFA, Manufacturing Methods, 3D Printing \\
+Languages &  English, French (Native Bilingual), Spanish
+
+\end{tabular}
+\end{rSection}
+
+\end{CVmode}
 
 \begin{rSection}{Skills}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Test Engineering & Data Acquisition Systems, LabVIEW, SolidWorks FEA\\
-Data Analysis & Python/Jupyter, Numerical Methods, Scientific Computing, MATLAB, Git \\
-Mechanical Engineering & SolidWorks, Autodesk Inventor, 3D Printing \\
-Languages &  English, French (Native Bilingual)
+Mechanical Engineering & SolidWorks, Solid Edge, DFM \& DFA, Manufacturing Methods, 3D Printing \\
+Experimental Physics & DAQ with LabVIEW, Electronics, Experimental Design, Vaccuum Systems \\
+Data Analysis & Python/Jupyter, Numerical Methods, Scientific Computing, MATLAB \\
+Languages &  English, French (Native Bilingual), Spanish
 
 \end{tabular}
 \end{rSection}
@@ -119,11 +133,8 @@ Languages &  English, French (Native Bilingual)
 \begin{rSection}{Education}
 
 \begin{rSubsection}{Faculty of Engineering, Queen's University, Kingston ON}{September 2019 - May 2024 (Expected)}{}{}{}
-  \item Candidate for Bachelor of Engineering Physics, Mechanical Stream
-  \item Dean's List with Honours for 6/6 semesters - GPA of 3.75/4.3
-\end{rSubsection}
-\begin{rSubsection}{Publications}{}{}{}
-  \item Julian Awad, Nikhil Menda, William Conway, and David Puddy, “Investigation of Magnetic Radiation Shields for Human Space Habitats,” J. Undergrad. Eng. Phys. Phys. Exp. Queens, Section 1, Vol 3.
+  \item Bachelor of Engineering Physics, Mechanical Stream
+  \item Dean's List with Honours - GPA of 3.77/4.3
 
 \end{rSubsection}
 
